@@ -6,7 +6,6 @@ namespace Facturacion.COMMON.Entidades
 {
     public class Cliente:Base
     {
-        string Id { get; set; }
         public string Nombre { get; set;  }
         public string PlanDeServicio { get; set; }
         public int Tarifa { get; set; }

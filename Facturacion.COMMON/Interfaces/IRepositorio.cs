@@ -8,8 +8,8 @@ namespace Facturacion.COMMON.Interfaces
     public interface IRepositorio<T> where T:Base
     {
         bool Create(T entidad);
-        bool Edit(string id, T entidadModificada);
-        bool Delete(T entidad);
+        bool Edit(T entidadModificada);
+        bool Delete(string id);
         List<T> Read { get; }
     }
 }
