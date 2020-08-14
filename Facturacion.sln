@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturacion.COMMON", "Facturacion.COMMON\Facturacion.COMMON.csproj", "{F2757A07-A66D-4F59-BEB8-6304D633E476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facturacion.COMMON", "Facturacion.COMMON\Facturacion.COMMON.csproj", "{F2757A07-A66D-4F59-BEB8-6304D633E476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturacion.DAL", "Facturacion.DAL\Facturacion.DAL.csproj", "{18A5A66F-F54D-4C16-9124-AD5C34BDE8EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facturacion.DAL", "Facturacion.DAL\Facturacion.DAL.csproj", "{18A5A66F-F54D-4C16-9124-AD5C34BDE8EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facturacion.BIZ", "Facturacion.BIZ\Facturacion.BIZ.csproj", "{20696D66-02EB-4400-8904-DDC953ACE0C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturacion.GUI.Administrador", "Facturacion.GUI.Administrador\Facturacion.GUI.Administrador.csproj", "{C84365CF-85B5-4F37-9B64-1256AF2C0E05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{18A5A66F-F54D-4C16-9124-AD5C34BDE8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A5A66F-F54D-4C16-9124-AD5C34BDE8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A5A66F-F54D-4C16-9124-AD5C34BDE8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20696D66-02EB-4400-8904-DDC953ACE0C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20696D66-02EB-4400-8904-DDC953ACE0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20696D66-02EB-4400-8904-DDC953ACE0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20696D66-02EB-4400-8904-DDC953ACE0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84365CF-85B5-4F37-9B64-1256AF2C0E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84365CF-85B5-4F37-9B64-1256AF2C0E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84365CF-85B5-4F37-9B64-1256AF2C0E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84365CF-85B5-4F37-9B64-1256AF2C0E05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

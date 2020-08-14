@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Facturacion.COMMON\Facturacion.COMMON.csproj" />
+    <ProjectReference Include="..\Facturacion.DAL\Facturacion.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

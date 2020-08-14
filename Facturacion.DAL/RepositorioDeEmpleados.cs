@@ -8,35 +8,33 @@ using System.Text;
 
 namespace Facturacion.DAL
 {
-    public class RepositorioDeClientes : IRepositorio<Cliente>
+    public class RepositorioDeEmpleados : IRepositorio<Empleado>
     {
-
         private string DBName = "Facturacion.db";
-        private string TableName = "Clientes";
+        private string TableName = "Empleados";
 
-        public List<Cliente> Read{
-
-            get 
+        public List<Empleado> Read
+        {
+            get
             {
-                List<Cliente> datos = new List<Cliente>();
+                List<Empleado> datos = new List<Empleado>();
                 using (var db = new LiteDatabase(DBName))
                 {
-                    datos = db.GetCollection<Cliente>(TableName).FindAll().ToList();
+                    datos = db.GetCollection<Empleado>(TableName).FindAll().ToList();
                 }
 
                 return datos;
             }
-
         }
 
-        public bool Create(Cliente entidad)
+        public bool Create(Empleado entidad)
         {
             entidad.Id = Guid.NewGuid().ToString();
             try
             {
                 using (var db = new LiteDatabase(DBName))
                 {
-                    var coleccion = db.GetCollection<Cliente>(TableName);
+                    var coleccion = db.GetCollection<Empleado>(TableName);
                     coleccion.Insert(entidad);
                 }
                 return true;
@@ -51,9 +49,9 @@ namespace Facturacion.DAL
         {
             try
             {
-                using(var db = new LiteDatabase(DBName))
+                using (var db = new LiteDatabase(DBName))
                 {
-                    var coleccion = db.GetCollection<Cliente>(TableName);
+                    var coleccion = db.GetCollection<Empleado>(TableName);
                     coleccion.Delete(id);
                 }
                 return true;
@@ -64,13 +62,13 @@ namespace Facturacion.DAL
             }
         }
 
-        public bool Edit(Cliente entidadModificada)
+        public bool Edit(Empleado entidadModificada)
         {
             try
             {
                 using (var db = new LiteDatabase(DBName))
                 {
-                    var coleccion = db.GetCollection<Cliente>(TableName);
+                    var coleccion = db.GetCollection<Empleado>(TableName);
                     coleccion.Update(entidadModificada);
                 }
                 return true;
