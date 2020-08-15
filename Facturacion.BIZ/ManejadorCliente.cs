@@ -29,10 +29,10 @@ namespace Facturacion.BIZ
 
         public List<Cliente> ClientesPagos()
         {
-            return Listar.Where(e => e.Pagado == true).ToList();
+            return Listar.Where(e => e.Pagado == "Si").ToList();
         }
 
-        public Cliente ClientesPorCedula(int cedula)
+        public Cliente ClientesPorCedula(string cedula)
         {
             return Listar.Where(e => e.Cedula == cedula).SingleOrDefault();
         }

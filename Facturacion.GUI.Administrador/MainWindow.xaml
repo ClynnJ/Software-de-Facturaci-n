@@ -15,11 +15,11 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <WrapPanel Grid.Row="0">
-                    <Button x:Name="btnClientesNuevo">Nuevo</Button>
-                    <Button x:Name="btnClientesEditar">Editar</Button>
-                    <Button x:Name="btnClientesGuardar">Guardar</Button>
-                    <Button x:Name="btnClientesCancelar">Cancelar</Button>
-                    <Button x:Name="btnClientesEliminar">Eliminar</Button>
+                    <Button x:Name="btnClientesNuevo" Click="btnClientesNuevo_Click">Nuevo</Button>
+                    <Button x:Name="btnClientesEditar" Click="btnClientesEditar_Click">Editar</Button>
+                    <Button x:Name="btnClientesGuardar" Click="btnClientesGuardar_Click">Guardar</Button>
+                    <Button x:Name="btnClientesCancelar" Click="btnClientesCancelar_Click">Cancelar</Button>
+                    <Button x:Name="btnClientesEliminar" Click="btnClientesEliminar_Click">Eliminar</Button>
                 </WrapPanel>
                 <WrapPanel Grid.Row="1">
                     <StackPanel Orientation="Horizontal">
@@ -59,7 +59,7 @@
                         <TextBlock x:Name="txbClientesPagado" Width="200"></TextBlock>
                     </StackPanel>
                 </WrapPanel>
-                <DataGrid x:Name="dtgClientes" Grid.Row="2"></DataGrid>
+                <DataGrid x:Name="dtgClientes" Grid.Row="2" IsReadOnly="True"></DataGrid>
             </Grid>
         </TabItem>
         <TabItem Header="Empleados">

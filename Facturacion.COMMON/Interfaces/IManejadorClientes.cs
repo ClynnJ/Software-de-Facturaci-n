@@ -8,6 +8,6 @@ namespace Facturacion.COMMON.Interfaces
     public interface IManejadorClientes:IManejadorGenerico<Cliente>
     {
         List<Cliente> ClientesPagos();
-        Cliente ClientesPorCedula(int cedula);
+        Cliente ClientesPorCedula(string cedula);
     }
 }
